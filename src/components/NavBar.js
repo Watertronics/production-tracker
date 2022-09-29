@@ -2,7 +2,7 @@ import React from "react";
 import '../App.css';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsChevronDown } from "react-icons/bs";
-import WTLogo from '../../public/wtlogo.png'
+import WTLogo from '../images/wtlogo.png'
 
 function NavBar() {
     return (

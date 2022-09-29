@@ -1,38 +1,696 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  /* height: 10000px; */
+}
+
+.TopNav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: #00457C;
+  color: white;
+  height: 64px;
+}
+
+.Container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.NavLogo {
+  display: flex;
+  min-width: 250px;
+  max-width: 250px;
+  background: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.WTLogo {
+  width: 200px;
+  height: 27.664px;
+}
+
+.SideNav {
+  display: flex;
+  min-height: 1000px;
+  min-width: 250px;
+  background: #00843D;
+  margin-bottom: 0;
+  color: white !important;
+}
+
+.SideNavContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 48px;
+  margin-left: 16px;
+}
+
+.SideNavLinks {
+  display: flex;
+  color: white !important;
+}
+
+.JobTable {
+  margin: 10px !important;
+  width: 100%;
+}
+
+.JobSearch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+Form .JobSearch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.SearchButton {
+  justify-content: center;
+  height: 38px;
+  margin-left: 10px;
+  margin-top: 32px;
+}
+
+th,
+td {
+  height: 42px;
+  padding: 8px 12px 8px 12px !important;
+}
+
+.TableHead {
+  background: #E1E8EE;
+}
+
+.CenterColumn {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.TopNavRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.User {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.User h6 {
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.Circle h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.Circle {
+  display: flex;
+  border: grey 1px solid;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+}
+
+.Menu {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.Link {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.EditLink {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.PDFLink {
+  color: #212529;
+}
+
+.PDFLink:hover {
+  color: #212529;
+}
+
+.JobContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.JobDataContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 10px;
+  width: 100%;
+}
+
+.ProjectInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.ProjectInfoItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ProjectInfoRow1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0px;
+}
+
+.ProjectInfoRow2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0px;
+}
+
+.ProjectInfoRow3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0px;
+}
+
+.SalesInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.SalesInfoItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.SalesInfoRow1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0px;
+}
+
+.ProjectName,
+.ProjectManager,
+.ProjectModelNumber,
+.ProjectSalesman,
+.ProjectStatus,
+.ProjectNumber {
+  display: flex;
+  flex-direction: row;
+}
+
+.accordion-button {
+  background: #00457C !important;
+  color: white !important;
+  height: 45px;
+}
+
+.accordion-button::after,
+.accordion-button:focus {
+  background: #00457C !important;
+  color: white !important;
+  border: none;
+  box-sizing: none;
+  box-shadow: none !important;
+}
+
+.ProjectNumber {
+  width: 150px;
+}
+
+.ProjectModelNumber .form-control {
+  min-width: 600px !important;
+}
+
+/* .JobContainer .ProjectInfoItem .form-control,
+.JobContainer .ProjectInfoItem .form-select {
+  display: flex !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: 1.25rem;
+  align-items: center !important;
+  padding: 14px 0px 0px 0px;
+  margin: 10px 10px 10px 10px;
+  max-width: max-content;
+}
+
+.JobContainer .ProjectInfoItem .form-control:focus,
+.JobContainer .ProjectInfoItem .form-select:focus {
+  display: flex;
+  box-shadow: none !important;
+  border-bottom: grey solid 1px !important;
+  border-radius: 0 !important;
+  transition: none !important;
+  margin: 10px;
+} */
+
+.SalesInfoItem .form-control,
+.SalesInfoItem .form-select {
+  display: flex !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: 1rem;
+  align-items: center !important;
+  padding: 14px 0px 0px 0px;
+  margin: 10px 10px 10px 10px;
+  /* max-width: max-content; */
+}
+
+.SalesInfoItem .form-control:focus,
+.SalesInfoItem .form-select:focus {
+  display: flex;
+  box-shadow: none !important;
+  border-bottom: grey solid 1px !important;
+  border-radius: 0 !important;
+  transition: none !important;
+  margin: 10px;
+}
+
+.JobContainer .form-control:disabled,
+.JobContainer .form-select:disabled {
+  background-color: white !important;
+  color: grey;
+}
+
+.JobContainer .form-control:disabled:hover,
+.JobContainer .form-select:disabled:hover {
+  background-color: #ECECEC !important;
+  color: grey;
+  border: none !important;
+}
+
+.JobContainer .form-control:hover,
+.JobContainer .form-select:hover {
+  display: flex;
+  box-shadow: none !important;
+  border-bottom: grey solid 1px !important;
+  border-radius: 0 !important;
+  transition: none !important;
+  margin: 10px;
+}
+
+Form {
+  display: flex !important;
+  align-items: center !important;
+  height: 58px;
+}
+
+.JobContainer h5 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.JobContainer h6 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.OrderImage {
+  max-height: 100%;
+  min-width: min-content;
+}
+
+.OrderImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.SoldTo,
+.ShipTo {
+  width: 49%;
+}
+
+.SalesColumns {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.TableForm .form-control,
+.FormTD .form-select {
+  display: flex !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: 1rem;
+  align-items: center !important;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 12px;
+  width: 375px;
+  /* max-width: max-content; */
+}
+
+.TableForm .form-control:focus,
+.FormTD .form-select:focus {
+  display: flex;
+  box-shadow: none !important;
+  border-bottom: grey solid 1px !important;
+  border-radius: 0 !important;
+  transition: none !important;
+  margin: 0px;
+}
+
+.TableForm .form-control:focus,
+.FormTD .form-select:focus {
+  display: flex;
+  box-shadow: none !important;
+  border-bottom: grey solid 1px !important;
+  border-radius: 0 !important;
+  transition: none !important;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 12px;
+}
+
+.TableForm .form-control:disabled,
+.FormTD .form-select:disabled {
+  background-color: white !important;
+  color: grey;
+}
+
+.TableForm .form-control:disabled:hover,
+.FormTD .form-select:disabled:hover {
+  background-color: #ECECEC !important;
+  color: grey;
+  border: none !important;
+}
+
+.TableForm .form-control:hover,
+.FormTD .form-select:hover {
+  display: flex;
+  box-shadow: none !important;
+  border-bottom: grey solid 1px !important;
+  border-radius: 0 !important;
+  transition: none !important;
+  padding: 0px 0px 0px 0px !important;
+  margin: 0px 0px 0px 12px !important;
+}
+
+.TableForm {
+  display: flex;
+  flex-direction: row;
+  margin: 0px !important;
+  height: 38px;
+}
+
+.FormTD {
+  height: 42px;
+  width: 375px;
+  padding: 0px 0px 0px 0px !important;
+}
+
+.JobAccordion .GeneralForm,
+.ProjectInfoItem .GeneralForm {
+  height: 44px;
+}
+
+div .mb-3 {
+  margin-bottom: 0rem !important;
+}
+
+.TableFormComments .form-control,
+.TableFormComments .form-select {
+  display: flex !important;
+  border: lightgray solid 1px !important;
+  border-radius: 0 !important;
+  font-size: 1rem;
+  align-items: center !important;
+  padding: 0px 0px 0px 0px;
+  margin: auto;
+  width: 900px;
+  height: fit-content !important;
+  /* max-width: max-content; */
+}
+
+.FormTextArea,
+.ProjectInfoItem .FormTextArea {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 35px 0px !important;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+}
+
+.FormTDComments {
+  height: min-content;
+  width: 100%;
+  padding: 0px 0px 0px 0px !important;
+}
+
+.FormRadio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+}
+
+.EngineeringEdit {
+  background: yellow !important;
+}
+
+/* CHANGE ORDER DISPLAY */
+
+.ChangeOrder {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+  justify-content: space-evenly;
+}
+
+.COHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.COColumnLeft h6,
+.COColumnRight h6,
+.COBody h6,
+.COCosts h6,
+.Notes {
+  margin: 10px;
+  color: #808080;
+}
+
+/* CHANGE ORDER FORM */
+
+.TitleAndTextForm {
+  display: flex;
+  flex-direction: row;
+  height: 44px;
+  align-items: center;
+}
+
+.ChangeOrderForm {
+  display: flex;
+  width: 80%;
+}
+
+.COForm {
+  height: 30px;
+  margin-left: 10px;
+}
+
+.COTextForm .form-control {
+  /* border: none !important; */
+  padding: 0 0 0 5px;
+}
+
+.COTextForm .form-control:hover {
+  /* border: none !important; */
+  padding: 0 0 0 5px;
+  margin: 0;
+}
+
+.COSelectForm .form-select {
+  padding: 0 40px 0 10px;
+}
+
+.COSelectForm .form-select:hover {
+  padding: 0 40px 0 10px;
+  margin: 0;
+}
+
+.ProductionEngineerSelect {
+  display: flex;
+  flex-direction: column;
+}
+
+.ProductionEngineerSelect .COForm {
+  height: 30px !important;
+}
+
+
+.COBody {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-bottom: 1px solid black;
+}
+
+.Reason {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+  align-items: center;
+}
+
+.CORadioForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Changes {
+  display: flex;
+  flex-direction: column;
+  height: 325px;
+}
+
+.COChanges .form-control {
+  margin: -20px 0 0 0;
+  position: absolute;
+  /* height: 500px !important; */
+  width: 600px;
+}
+
+.COChanges .form-control:hover,
+.COChanges .form-control:focus {
+  margin: -20px 0 0 0;
+  box-shadow: none;
+}
+
+.ChangesForm {
+  height: 30px;
+  margin-left: 0px;
+}
+
+.COTextFormChanges .form-control {
+  /* border: none !important; */
+  padding: 0 0 0 5px;
+  width: 600px;
+}
+
+.COTextFormChanges .form-control:hover {
+  /* border: none !important; */
+  padding: 0 0 0 5px;
+  margin: 0;
+}
+
+.COCosts {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.COCostsRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.LastCostItem {
+  border-bottom: 1px solid black;
+}
+
+.Notes {
+  display: flex;
+  flex-direction: column;
+  height: 325px;
+}
+
+.CONotes .form-control {
+  margin: -20px 0 0 0;
+  position: absolute;
+  /* height: 500px !important; */
+  width: 600px;
+}
+
+.CONotes .form-control:hover,
+.CONotes .form-control:focus {
+  margin: -20px 0 0 0;
+  box-shadow: none;
+}
+
+.COSubmitButton {
+  display: flex;
+  justify-content: center;
+}
+
+.redWarning {
+  color: red !important;
+}
+
+.firstInput {
+  color: black !important;
+}
+
+.orangeInput {
+  color: darkorange !important;
+}
+
+.accordionDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.accordionTitle {
+  margin-right: 15px;
 }

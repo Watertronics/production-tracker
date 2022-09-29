@@ -2,12 +2,13 @@ import React from "react";
 import '../App.css';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsChevronDown } from "react-icons/bs";
+import WTLogo from '../../public/wtlogo.png'
 
 function NavBar() {
     return (
         <div className="TopNav">
             <div className="NavLogo">
-                <img src={'../../wtlogo.png'} className="WTLogo" />
+                <img src={WTLogo} className="WTLogo" />
             </div>
             <div className="TopNavRight">
                 <div className="Menu">

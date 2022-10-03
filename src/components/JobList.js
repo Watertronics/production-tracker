@@ -49,7 +49,7 @@ function JobList() {
                         <td>VTV-1-75x4/5ST-460-3-1500-120</td>
                         <td>Greg Salisbury</td>
                         <td>Job Released</td>
-                        <td className="CenterColumn"><Link to={`/2020583`} className="EditLink" ><BsFillPencilFill /></Link></td>
+                        <td className="CenterColumn"><Link to={`/production-tracker/2020583`} className="EditLink" ><BsFillPencilFill /></Link></td>
                     </tr>
                     <tr>
                         <td className="CenterColumn">2020580</td>
@@ -57,7 +57,7 @@ function JobList() {
                         <td>VTV-1-60x3/15V/5ST-460-3-1800-120</td>
                         <td>Mike Green</td>
                         <td>Job Released</td>
-                        <td className="CenterColumn" ><Link to={`/2020580`} className="EditLink" ><BsFillPencilFill /></Link></td>
+                        <td className="CenterColumn" ><Link to={`/production-tracker/2020580`} className="EditLink" ><BsFillPencilFill /></Link></td>
                     </tr>
                     {/* <tr>
                         <td className="CenterColumn" colSpan={6}>

@@ -8,12 +8,12 @@ import Lakewood from './components/Lakewood'
 import LakewoodOrder from './components/LakewoodOrder'
 import NavBar from "./components/NavBar"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import HashRouter from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <HashRouter>
         <NavBar />
         <Routes>
           <Route path="production-tracker/" element={<Container />} />
@@ -36,7 +36,7 @@ function App() {
         <Routes>
           <Route path="production-tracker/2020580/OrderSheet" element={<LakewoodOrder />} />
         </Routes>
-      </Router>
+      </HashRouter>
     </div>
   )
 }

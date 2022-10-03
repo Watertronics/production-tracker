@@ -41,7 +41,7 @@ function JobList() {
                         <td>HCLVE-1-50x2/10VMSV-460-3-1100-110</td>
                         <td>Eric Pifer</td>
                         <td>Job Released</td>
-                        <td className="CenterColumn"><Link to={`/2020676`} className="EditLink" ><BsFillPencilFill /></Link></td>
+                        <td className="CenterColumn"><Link to={`/production-tracker/2020676`} className="EditLink" ><BsFillPencilFill /></Link></td>
                     </tr>
                     <tr>
                         <td className="CenterColumn">2020583</td>

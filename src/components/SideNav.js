@@ -41,7 +41,7 @@ function SideNav() {
                 </div>
                 <div className="SideNavContainer">
                     <BsFillGearFill />
-                    <Nav.Link className="SideNavLinks"><Link to={`/`} className="Link">Production</Link></Nav.Link>
+                    <Nav.Link className="SideNavLinks"><Link to={`production-tracker/`} className="Link">Production</Link></Nav.Link>
                 </div>
                 {/* <div className="SideNavContainer">
                     <BsFillGearFill />

@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.css';
+import 'production-tracker/src/App.css';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsChevronDown } from "react-icons/bs";
 import WTLogo from '../images/wtlogo.png'

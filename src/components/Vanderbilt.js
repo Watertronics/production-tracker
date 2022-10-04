@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.css';
+import 'production-tracker/src/App.css';
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button"
 import { BsEyeFill } from "react-icons/bs";

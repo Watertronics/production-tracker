@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.css';
+import 'production-tracker/src/App.css';
 import SideNav from "./SideNav"
 import genPay from "../images/vanderbilt-general-payment-terms.jpg"
 import ship from "../images/vanderbilt-ship-price.jpg"

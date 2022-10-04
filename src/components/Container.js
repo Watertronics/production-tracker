@@ -1,5 +1,5 @@
 import React from "react";
-import 'production-tracker/src/App.css';
+import '../App.css';
 import JobList from "./JobList";
 import SideNav from "./SideNav"
 

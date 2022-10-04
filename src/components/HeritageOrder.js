@@ -1,5 +1,5 @@
 import React from "react";
-import 'production-tracker/src/App.css';
+import '../App.css';
 import SideNav from "./SideNav"
 import genInfo from "../images/heritage-general-info.jpg"
 import invAd from "../images/heritage-invoice-address.jpg"

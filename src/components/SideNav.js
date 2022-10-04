@@ -1,5 +1,5 @@
 import React from "react";
-import 'production-tracker/src/App.css';
+import '../App.css';
 import Nav from 'react-bootstrap/Nav'
 import { BsFillGrid1X2Fill } from "react-icons/bs";
 import { BsFillBagCheckFill } from "react-icons/bs";

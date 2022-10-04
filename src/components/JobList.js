@@ -1,5 +1,5 @@
 import React from "react";
-import 'production-tracker/src/App.css';
+import '../App.css';
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
